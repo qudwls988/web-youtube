@@ -1,28 +1,26 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 
-import Home from './pages/Home'
-import Today from './pages/Today'
-import Music from './pages/Music'
-import Movie from './pages/Movie'
-import Book from './pages/Book'
-import Anime from './pages/Anime'
-import Port from './pages/Port'
-import Youtube from './pages/Youtube'
-import Channel from './pages/Channel'
-import Video from './pages/Video'
-import Search from './pages/Search'
-import Not from './pages/Not'
-import Header from './components/section/Header'
-import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+const Home = lazy(()=> import ('./pages/Home'));
+const Today = lazy(()=> import ('./pages/Today'));
+const Music = lazy(()=> import ('./pages/Music'));
+const Movie = lazy(()=> import ('./pages/Movie'));
+const Book = lazy(()=> import ('./pages/Book'));
+const Anime = lazy(()=> import ('./pages/Anime'));
+const Port = lazy(()=> import ('./pages/Port'));
+const Youtube = lazy(()=> import ('./pages/Youtube'));
+const Channel = lazy(()=> import ('./pages/Channel'));
+const Video = lazy(()=> import ('./pages/Video'));
+const Search = lazy(()=> import ('./pages/Search'));
+const Not = lazy(()=> import ('./pages/Not'));
+const Main = lazy(()=> import ('./components/section/Main'));
+
 
 const App = () => {
   return (
     <BrowserRouter>
-        <Header/>
-        <Main>
+        <Suspense fallback={<Main/>}>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/today' element={<Today/>}/>
@@ -37,8 +35,7 @@ const App = () => {
             <Route path='/search/:searchID' element={<Search/>}/>
             <Route path='/*'element={<Not/>}/>
           </Routes>
-        </Main>
-        <Footer/>
+        </Suspense>
     </BrowserRouter>
   )
 }

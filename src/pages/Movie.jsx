@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Moive = () => {
   return (
-    <div>Moive</div>
+    <Main>
+        Movie
+    </Main>
   )
 }
 
