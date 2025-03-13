@@ -3,7 +3,7 @@ import Main from '../components/section/Main'
 
 const Music = () => {
   return (
-    <Main>
+    <Main title="음악 채널"  description="음악 추천 페이지입니다.">
         Music
     </Main>
   )
