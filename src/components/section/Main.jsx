@@ -3,7 +3,9 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import Search from '../header/Search'
+import Search from './Search'
+
+
 
 
 

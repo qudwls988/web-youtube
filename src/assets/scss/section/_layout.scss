@@ -6,7 +6,7 @@
     height: 100%;
     overflow-y: auto;
     z-index: 10000;
-    // background-color: #000;
+    border-right: 1px solid var(--black200);
 }
 
 #main{
@@ -19,6 +19,10 @@
 
 #footer{
     text-align: center;
-    background-color: #333;
-    padding: 20px 20px 20px 260px;
+    background-color: var(--black100);
+    border-top: 1px solid var(--black100);
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    color: var(--black400);
 }

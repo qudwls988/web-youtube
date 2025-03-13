@@ -13,7 +13,8 @@ function Search() {
                 id='searchInput'
                 autoComplete='off'
                 className='search__input'
-            ></input>
+                placeholder='검색어를 입력해주세요'
+                />
         </div>
 
     </div>
