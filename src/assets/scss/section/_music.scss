@@ -13,7 +13,7 @@
     
 
         
-        margin-right: 20px;
+        margin-right: 15px;
 
         .music__img{
             width: 150px;
@@ -34,23 +34,23 @@
 }
 
     
-@media (max-width:1200px){
-    .music__inner{
-        justify-content: center;
+// @media (max-width:1200px){
+//     .music__inner{
+//         justify-content: center;
 
-        .music{
+//         .music{
 
-            margin-right: 0;
+//             margin-right: 0;
 
-            .music__img{
-                width: 130px;
-                height: 130px;
-                margin: 10px auto;
-            }
-            .music__info{}
-        }
-    }
-}
+//             .music__img{
+//                 width: 130px;
+//                 height: 130px;
+//                 margin: 10px auto;
+//             }
+//             .music__info{}
+//         }
+//     }
+// }
 
 @media (max-width:800px){
     .music__inner{
