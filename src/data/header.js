@@ -43,9 +43,9 @@ export const headerMenus =[
         src: "/anime"
     },
     {
-        title:"유튜브 사이트",
+        title:"즐겨찾기",
         icon: <CiIceCream />,
-        src: "/youtube"
+        src: "/favorite"
     } 
 ];
 

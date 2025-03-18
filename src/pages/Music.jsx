@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../components/section/Main'
 import { musicText } from '../data/music'
-import { Link } from 'react-router-dom'
+import VideoCard from '../components/video/VideoCard'
 
 const Music = () => {
   return (
@@ -11,20 +11,7 @@ const Music = () => {
           <section id='music'>
             <h2>😎 추천 음악을 소개합니다.</h2>
                   <div className='music__inner'>
-                      {musicText.map((music, key)=>(
-                        <div className='music' key={key}>
-                          <div className='music__img play__icon'>
-                            <Link to={`/channel/${music.channelId}`}>
-                            <img src={music.img} alt={music.name}/>
-                            </Link>
-                          </div>
-                          <div className="music__info">
-                            <Link to={`/channel/${music.channelId}`}>
-                              {music.name}
-                            </Link>
-                          </div>
-                        </div>
-                      ))}
+                  <VideoCard videos={musicText}/>
                   </div>
           </section>
     </Main>

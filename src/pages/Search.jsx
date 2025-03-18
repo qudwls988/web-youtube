@@ -7,7 +7,7 @@ import { fetchFromAPI } from '../utils/api'
 
 const Search = () => {
 
-  const { searchId } = useParams();
+  const { searchID } = useParams();
   //search/123 -> useParams {searchID:"123"}
 
 
@@ -17,9 +17,9 @@ const Search = () => {
 
   useEffect(()=>{
     setVideos([]);
-    fetchVideos(searchId)
+    fetchVideos(searchID)
     setLoading(false)
-  },[searchId]);
+  },[searchID]);
 
   const fetchVideos = (query, pageToken='') => {
     fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
@@ -35,7 +35,7 @@ const Search = () => {
 
   const handleLoadMore = () => {
     if(nextPageToken){
-      fetchVideos(searchId, nextPageToken)
+      fetchVideos(searchID, nextPageToken)
     }
   }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BookText } from '../../data/book'
 import { Link } from 'react-router-dom'
+import Main from '../components/section/Main'
 
 const Book = () => {
   return (
