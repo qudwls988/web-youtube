@@ -2,7 +2,7 @@ import React from 'react'
 import Main from '../components/section/Main'
 
 import { movieText } from '../data/movie'
-import VideoCard from '../components/video/videoCard'
+import VideoCard from '../components/video/VideoCard'
 
 
 const Moive = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const videoCard = ({videos}) => {
+const VideoCard = ({videos}) => {
     return (
         <>
             {
@@ -18,4 +18,4 @@ const videoCard = ({videos}) => {
     )
 }
 
-export default videoCard
+export default VideoCard

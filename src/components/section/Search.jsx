@@ -10,7 +10,7 @@ function Search() {
     console.log(searchKeyword);
     if(searchKeyword){
       navigate(`/search/${searchKeyword}`)
-      setSearchKeyword('');
+      setSearchKeyword();
     }
   };
 
